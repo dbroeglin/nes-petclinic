@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug PetClinic",
+      "type": "java",
+      "request": "launch",
+      "preLaunchTask": "Build PetClinic",
+      "mainClass": "org.springframework.samples.petclinic.PetClinicApplication",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "env": {},
+      "envFile": "${input:dotEnvFilePath}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "dotEnvFilePath",
+      "type": "command",
+      "command": "azure-dev.commands.getDotEnvFilePath"
+    }
+  ]
+}
